@@ -4,7 +4,8 @@ GO111MODULE=on
 export GO111MODULE
 
 GITHUB_URL=github.com/brancz/kube-rbac-proxy
-GOOS?=$(shell uname -s | tr A-Z a-z)
+#GOOS?=$(shell uname -s | tr A-Z a-z)
+GOOS=linux
 GOARCH?=$(shell go env GOARCH)
 OUT_DIR=_output
 BIN?=kube-rbac-proxy
