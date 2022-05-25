@@ -1,5 +1,6 @@
-ARG GOARCH=amd64
-FROM gcr.io/distroless/static:nonroot-$GOARCH
+#ARG GOARCH=amd64
+#FROM gcr.io/distroless/static:nonroot-$GOARCH
+FROM gcr.io/distroless/base:latest
 
 ARG BINARY=kube-rbac-proxy-linux-amd64
 COPY _output/$BINARY /usr/local/bin/kube-rbac-proxy
